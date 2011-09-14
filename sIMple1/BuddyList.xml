@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE buddies [
+	<!ELEMENT buddies (group)*>
+	<!ELEMENT group (buddy)*>
+	<!ATTLIST group
+		name CDATA #REQUIRED
+	>
+	<!ELEMENT buddy (statusMessage?, info?, conversation?)>
+	<!ATTLIST buddy 
+		sn CDATA #REQUIRED
+		alias CDATA #REQUIRED
+		status (available|away|offline) #REQUIRED
+	>
+	<!ELEMENT statusMessage (#PCDATA)>
+	<!ELEMENT conversation (#PCDATA)>
+	<!ELEMENT info (#PCDATA)>
+]>
+
+<buddies>
+	<group name="Roommies">
+		<buddy sn="jacquesj00s0x" alias="Jacques" status="available">
+			<statusMessage></statusMessage>
+			<info>Hi this is my profile.</info>
+		</buddy>
+		<buddy sn="engineeringFTW" alias="Kyle" status="available">
+			<statusMessage>studying</statusMessage>
+			<info>This is my awesome profile</info>
+		</buddy>
+		<buddy sn="thechazman" alias="Chaz" status="away">
+			<statusMessage>making popcorn</statusMessage>
+			<info>Where am I?</info>
+		</buddy>	
+	</group>
+	<group name="Friends">
+		<buddy sn="coolguy87" alias="Johnny" status="available">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="l33tzor_master" alias="Derek" status="away">
+			<statusMessage>I am working on a group project.  I will be back in half an hour.</statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="jeremyroxors" alias="Jeremy" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="frankster" alias="Frankie" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="george2573" alias="George" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="billistehrox" alias="Bill" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="jessroxors" alias="Jess" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="girlychique27a" alias="Lisa" status="offline">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="sarahroxors" alias="Sarah" status="away">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="brettroxors" alias="Brett" status="away">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="johnroxors" alias="John" status="available">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="julieroxors" alias="Julie" status="available">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+	</group>
+	<group name="Family">
+		<buddy sn="brutha87" alias="Billy" status="available">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="bigmomma" alias="Mom" status="available">
+			<statusMessage></statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="bigpoppa" alias="Dad" status="away">
+			<statusMessage>mowing the lawn</statusMessage>
+			<info></info>
+		</buddy>
+		<buddy sn="bigsista" alias="Jill" status="away">
+			<statusMessage>at the store</statusMessage>
+			<info></info>
+		</buddy>
+	</group>
+</buddies>
